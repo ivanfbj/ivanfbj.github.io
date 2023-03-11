@@ -1,6 +1,10 @@
 /* Importamos las fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
 
+:root {
+  --color-primario: #940253;
+}
+
 * {
   font-family: 'Titillium Web';
   margin: 0;
@@ -37,7 +41,7 @@ html {
 .inicio .contenido-seccion header nav {
   position: fixed;
   margin-left: 60px;
-  background-color: #940253;
+  background-color: var(--color-primario);
   padding: 15px;
   border-radius: 10px;
   text-align: left;
@@ -62,13 +66,13 @@ html {
 }
 
 .inicio .contenido-seccion header .logo .color {
-  color: #940253;
+  color: var(--color-primario);
   font-family: "Yellowtail";
 }
 
 .inicio .contenido-seccion header .nav-bar {
   position: fixed;
-  background-color: #940253;
+  background-color: var(--color-primario);
   font-size: 20px;
   width: 50px;
   height: 50px;
@@ -106,8 +110,8 @@ html {
   display: inline-block;
   text-decoration: none;
   background-color: #000;
-  color: #940253;
-  border: 1px solid #940253;
+  color: var(--color-primario);
+  border: 1px solid var(--color-primario);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -118,7 +122,7 @@ html {
 
 .inicio .contenido-seccion .info .redes a:hover {
   color: #fff;
-  background-color: #940253;
+  background-color: var(--color-primario);
   box-shadow: 0 0 20px #fff;
 }
 
@@ -129,9 +133,76 @@ html {
 .inicio .contenido-seccion .foto img {
   max-width: 200px;
   border-radius: 50%;
-  border: 5px solid #940253;
+  border: 5px solid var(--color-primario);
   position: absolute;
   left: 50%;
   top: -100px;
   transform: translateX(-50%);
+}
+
+/* estilos generales */
+.titulo-seccion {
+  font-family: "Yellowtail";
+  font-size: 1.5rem;
+}
+
+/* SECCION SOBRE MI  */
+
+.sobremi {
+  background-color: #e6e6e6;
+  padding: 140px 0 100px 0;
+  text-align: center;
+  /* border: 40px solid #ff0303 */
+}
+
+.sobremi .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+  /* border: 40px solid #03ff1c */
+}
+
+.sobremi .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.sobremi .contenido-seccion .especial {
+  color: var(--color-primario);
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.sobremi .contenido-seccion p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+}
+
+.sobremi .contenido-seccion .fila {
+  display: flex;
+  margin-top: 30px;
+  /* justify-content: space-between; */
+  justify-content: center;
+  /*esta propiedad la coloqué ya que no tengo 3 elementos sino 2*/
+}
+
+.sobremi .contenido-seccion .fila .col {
+  width: 30%;
+}
+
+.sobremi .contenido-seccion .fila .col i {
+  color: var(--color-primario);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-primario);
+  line-height: 40px;
+  border-radius: 50%
+}
+
+.sobremi .contenido-seccion .fila .col span {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0;
 }
