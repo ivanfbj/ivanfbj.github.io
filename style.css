@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
 
 :root {
-  --color-primario: #940253;
+  --color-primario: #0a009a;
 }
-
+/* #940253 */
 * {
   font-family: 'Titillium Web';
   margin: 0;
@@ -205,4 +205,59 @@ html {
   display: block;
   font-weight: bold;
   margin: 8px 0;
+}
+
+/* SECCION HABILIDADES */
+
+.habilidades {
+  padding: 80px 0 100px 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+    url("img/fondo-habilidades.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #fff;
+}
+
+.habilidades .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.habilidades .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.habilidades .contenido-seccion .fila {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.habilidades .contenido-seccion .fila .col {
+  width: 47%;
+  text-align: left;
+}
+
+.habilidades .contenido-seccion .fila .col .cont-barra {
+  display: flex;
+  align-items: center;
+}
+
+.habilidades .contenido-seccion .barra {
+  display: flex;
+  border: 1px solid var(--color-primario);
+  padding: 2px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.habilidades .contenido-seccion .barra .e{
+  background-color: #363636;
+  width: 20px;
+  height: 30px;
+  margin-right: 2px;
 }
