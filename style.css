@@ -4,6 +4,7 @@
 :root {
   --color-primario: #0a009a;
 }
+
 /* #940253 */
 * {
   font-family: 'Titillium Web';
@@ -208,7 +209,6 @@ html {
 }
 
 /* SECCION HABILIDADES */
-
 .habilidades {
   padding: 80px 0 100px 0;
   text-align: center;
@@ -255,9 +255,81 @@ html {
   margin-right: 10px;
 }
 
-.habilidades .contenido-seccion .barra .e{
+.habilidades .contenido-seccion .barra .e {
   background-color: #363636;
   width: 20px;
   height: 30px;
   margin-right: 2px;
+}
+
+/* SECCION RESUMEN */
+.resumen {
+  background-color: #e6e6e6;
+  padding: 140px 0 100px 0;
+  text-align: center;
+}
+
+.resumen .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.resumen .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.resumen .contenido-seccion .info {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.resumen .contenido-seccion .info .col {
+  width: 45%;
+}
+
+.resumen .contenido-seccion .info .col .titulo {
+  display: inline-block;
+  color: var(--color-primario);
+  font-weight: bold;
+  border: 2px solid var(--color-primario);
+  padding: 10px;
+}
+
+.resumen .contenido-seccion .info .col table {
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+.resumen .contenido-seccion .info .col table .datos{
+  width: 40%;
+  border-bottom: 1px solid #bab9b9;
+}
+
+.resumen .contenido-seccion .info .col table h4{
+margin-top: 10px
+}
+
+.resumen .contenido-seccion .info .col table h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.resumen .contenido-seccion .info .col table p{
+  font-size: 14px;
+}
+
+.resumen .contenido-seccion .info .col table .promedio {
+  display: block;
+  color: var(--color-primario);
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.resumen .contenido-seccion .info .col table .descripcion {
+  border-left: 1px solid #bab9b9;
+  padding-left: 20px;
 }
