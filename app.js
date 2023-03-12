@@ -32,23 +32,23 @@ function crearBarra(id_barra) {
 }
 
 //seleccionar todas las barras generales para luego manipularlas.
-let tecnologia1 = document.getElementById("tecnologia1");
-crearBarra(tecnologia1);
+let sqlserver = document.getElementById("sqlserver");
+crearBarra(sqlserver);
 
-let tecnologia2 = document.getElementById("tecnologia2");
-crearBarra(tecnologia2);
+let gestionProyectos = document.getElementById("gestionProyectos");
+crearBarra(gestionProyectos);
 
-let tecnologia3 = document.getElementById("tecnologia3");
-crearBarra(tecnologia3);
+let git = document.getElementById("git");
+crearBarra(git);
 
-let tecnologi4 = document.getElementById("tecnologia4");
-crearBarra(tecnologia4);
+let tecnologi4 = document.getElementById("ofimatica");
+crearBarra(ofimatica);
 
-let tecnologia5 = document.getElementById("tecnologia5");
-crearBarra(tecnologia5);
+let linux = document.getElementById("linux");
+crearBarra(linux);
 
-let tecnologia6 = document.getElementById("tecnologia6");
-crearBarra(tecnologia6);
+let liderazgo = document.getElementById("liderazgo");
+crearBarra(liderazgo);
 
 //Guardar la cantidad de barras que se van a ir pintando por cada barra.
 //Para eso se usa un arreglo, caad posicion pertenece a un elemento.
@@ -63,28 +63,28 @@ function efectoHabilidades() {
   var distancia_skills = window.innerHeight - habilidades.getBoundingClientRect().top;
   if (distancia_skills >= 300 && entro == false) {
     entro = true;
-    const intervalTecnologia1 = setInterval(function () {
-      pintarBarra(tecnologia1, 2, 0, intervalTecnologia1);
+    const intervalSqlserver = setInterval(function () {
+      pintarBarra(sqlserver, 16, 0, intervalSqlserver);
     }, 100);
 
-    const intervalTecnologia2 = setInterval(function () {
-      pintarBarra(tecnologia2, 4, 1, intervalTecnologia2);
+    const intervalGestionProyectos = setInterval(function () {
+      pintarBarra(gestionProyectos, 12, 1, intervalGestionProyectos);
     }, 100);
 
-    const intervalTecnologia3 = setInterval(function () {
-      pintarBarra(tecnologia3, 6, 2, intervalTecnologia3);
+    const intervalGit = setInterval(function () {
+      pintarBarra(git, 12, 2, intervalGit);
     }, 100);
 
-    const intervalTecnologia4 = setInterval(function () {
-      pintarBarra(tecnologia4, 8, 3, intervalTecnologia4);
+    const intervalOfimatica = setInterval(function () {
+      pintarBarra(ofimatica, 12, 3, intervalOfimatica);
     }, 100);
 
-    const intervalTecnologia5 = setInterval(function () {
-      pintarBarra(tecnologia5, 10, 4, intervalTecnologia5);
+    const intervalLinux = setInterval(function () {
+      pintarBarra(linux, 8, 4, intervalLinux);
     }, 100);
 
-    const intervalTecnologia6 = setInterval(function () {
-      pintarBarra(tecnologia6, 12, 5, intervalTecnologia6);
+    const intervalLiderazgo = setInterval(function () {
+      pintarBarra(liderazgo, 6, 5, intervalLiderazgo);
     }, 100);
   }
 }
