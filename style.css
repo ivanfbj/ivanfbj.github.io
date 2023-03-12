@@ -1,9 +1,11 @@
 /* Importamos las fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
 
 /* El Javascript también utiliza la variable */
 :root {
-  --color-primario: #0a009a;
+  --color-primario: #0a0275;
+  --color-pintar-barra: #094c82;
 }
 
 /* #940253 */
@@ -104,6 +106,14 @@ html {
   letter-spacing: 1px;
 }
 
+.inicio .contenido-seccion .info h3 {
+  font-weight: normal;
+  font-size: 22px;
+  margin-top: 1px;
+  letter-spacing: 0.5px;
+  font-family: "Kalam";
+}
+
 .inicio .contenido-seccion .info .redes {
   margin: 20px 0;
 }
@@ -111,15 +121,16 @@ html {
 .inicio .contenido-seccion .info .redes a {
   display: inline-block;
   text-decoration: none;
-  background-color: #000;
+  background-color: #dcddef;
   color: var(--color-primario);
-  border: 1px solid var(--color-primario);
+  border: 3px solid var(--color-primario);
   border-radius: 50%;
   width: 40px;
   height: 40px;
   line-height: 40px;
   margin: 0 5px;
   transition: .5s;
+  font-size: 22px;
 }
 
 .inicio .contenido-seccion .info .redes a:hover {
@@ -144,7 +155,7 @@ html {
 
 /* estilos generales */
 .titulo-seccion {
-  font-family: "Yellowtail";
+  font-family: "Kalam";
   font-size: 1.5rem;
 }
 
@@ -172,13 +183,13 @@ html {
 .sobremi .contenido-seccion .especial {
   color: var(--color-primario);
   font-weight: bold;
-  margin-top: 15px;
 }
 
 .sobremi .contenido-seccion p {
   max-width: 700px;
   margin: auto;
   color: #666;
+  margin-bottom: 15px;
 }
 
 .sobremi .contenido-seccion .fila {
@@ -219,6 +230,10 @@ html {
   background-attachment: fixed;
   background-position: center center;
   color: #fff;
+}
+
+.habilidades img {
+  opacity: 0.10;
 }
 
 .habilidades .contenido-seccion {
@@ -364,7 +379,7 @@ html {
 }
 
 .contacto .contenido-seccion .fila .col h2 {
-  color: var(--color-primario)
+  color: #0b69b6
 }
 
 /*SECCIÓN RESPONSIVE*/
@@ -415,5 +430,9 @@ html {
 
   .contacto .contenido-seccion .fila {
     display: block;
+  }
+
+  .habilidades .contenido-seccion .barra .e {
+    width: 12px;
   }
 }

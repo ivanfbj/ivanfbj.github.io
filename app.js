@@ -92,7 +92,7 @@ function efectoHabilidades() {
 //Se llena una barra particular con la cantidad indicada.
 function pintarBarra(id_barra, cantidad, indice, interval) {
   // Obtener el valor de la variable CSS
-  var color_primario = getComputedStyle(document.documentElement).getPropertyValue('--color-primario');
+  var color_primario = getComputedStyle(document.documentElement).getPropertyValue('--color-pintar-barra');
 
   contadores[indice]++;
   x = contadores[indice];
