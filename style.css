@@ -1,6 +1,7 @@
 /* Importamos las fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
 
+/* El Javascript también utiliza la variable */
 :root {
   --color-primario: #0a009a;
 }
