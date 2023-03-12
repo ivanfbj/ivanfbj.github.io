@@ -343,26 +343,77 @@ html {
   text-align: center;
 }
 
-.contacto .contacto-seccion{
+.contacto .contacto-seccion {
   max-width: 1000px;
   margin: auto;
   padding: 0 10px;
 }
 
-.contacto .contacto-seccion h3{
+.contacto .contacto-seccion h3 {
   text-transform: uppercase;
   font-size: 30px;
 }
 
-.contacto .contenido-seccion .fila{
+.contacto .contenido-seccion .fila {
   display: flex;
   justify-content: space-around;
 }
 
-.contacto .contenido-seccion .fila .col{
+.contacto .contenido-seccion .fila .col {
   margin-top: 50px;
 }
 
 .contacto .contenido-seccion .fila .col h2 {
   color: var(--color-primario)
+}
+
+/*SECCIÓN RESPONSIVE*/
+@media screen and (max-width: 1030px) {
+  .habilidades .contenido-seccion .fila {
+    display: block;
+  }
+
+  .habilidades .contenido-seccion .fila .col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .habilidades .contenido-seccion .fila .col .cont-barra {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sobremi .contenido-seccion .fila {
+    display: block;
+  }
+
+  .sobremi .contenido-seccion .fila .col {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .resumen .contenido-seccion .info {
+    display: block;
+  }
+
+  .resumen .contenido-seccion .info .col {
+    width: 90%;
+    margin: auto;
+  }
+
+  .resumen .contenido-seccion .info .col .titulo {
+    display: block;
+    text-align: center;
+  }
+
+  .resumen .contenido-seccion .info .col table {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .contacto .contenido-seccion .fila {
+    display: block;
+  }
 }
