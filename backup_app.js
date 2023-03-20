@@ -1,53 +1,53 @@
 //Menu lateral
 var menu_visible = false;
-let menu = $('#nav');
+let menu = document.getElementById("nav");
 
 function mostrarOcultarMenu() {
   if (menu_visible == false) {
     //Si esta oculto
-    menu.css("display", "block");
+    menu.style.display = "block";
     menu_visible = true;
   } else {
-    menu.css("display", "none");
+    menu.style.display = "none";
     menu_visible = false;
   }
 }
 
 //oculto el menu una vez que se selecciono una opcion
-$("nav a").click(function () {
-  menu.hide();
-  menu_visible = false;
-});
-
-
-
-
-//Crear barras de las habilidades identificada por su id
-function crearBarra(idBarra) {
-  for (let i = 0; i < 20; i++) {
-    $(idBarra).append($("<div>").addClass("e"));
+let links = document.querySelectorAll("nav a");
+for (var x = 0; x < links.length; x++) {
+  links[x].onclick = function () {
+    menu.style.display = "none";
+    menu_visible = false;
   }
 }
 
-
+//Crear barras de las habilidades identificada por su id
+function crearBarra(id_barra) {
+  for (i = 0; i < 20; i++) {
+    let div = document.createElement("div");
+    div.className = "e";
+    id_barra.appendChild(div);
+  }
+}
 
 //seleccionar todas las barras generales para luego manipularlas.
-
+let sqlserver = document.getElementById("sqlserver");
 crearBarra(sqlserver);
 
-
+let gestionProyectos = document.getElementById("gestionProyectos");
 crearBarra(gestionProyectos);
 
-
+let git = document.getElementById("git");
 crearBarra(git);
 
-
+let tecnologi4 = document.getElementById("ofimatica");
 crearBarra(ofimatica);
 
-
+let linux = document.getElementById("linux");
 crearBarra(linux);
 
-
+let liderazgo = document.getElementById("liderazgo");
 crearBarra(liderazgo);
 
 //Guardar la cantidad de barras que se van a ir pintando por cada barra.
@@ -61,8 +61,6 @@ let entro = false;
 function efectoHabilidades() {
   var habilidades = document.getElementById("habilidades");
   var distancia_skills = window.innerHeight - habilidades.getBoundingClientRect().top;
-  // var habilidades = $("#habilidades");
-  // var distancia_skills = window.innerHeight - habilidades.offset().top;
   if (distancia_skills >= 300 && entro == false) {
     entro = true;
     const intervalSqlserver = setInterval(function () {
@@ -101,16 +99,12 @@ function pintarBarra(id_barra, cantidad, indice, interval) {
   if (x < cantidad) {
     let elementos = id_barra.getElementsByClassName('e');
     elementos[x].style.backgroundColor = color_primario;
-    // $(id_barra).find('.e').css('background-color', color_primario);
   } else {
     clearInterval(interval);
   }
 }
 
 //Se detecta el scrolling del mouse para aplicar la animación de la barra.
-// window.onscroll = function () {
-//   efectoHabilidades();
-// }
-$(window).on('scroll', function() {
+window.onscroll = function () {
   efectoHabilidades();
-});
+}
